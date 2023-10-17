@@ -25,7 +25,7 @@ model Product {
   imageUrl String
   description String
   basePrice Decimal @db.Decimal(8, 2)
-  categoryID String
+  categoryId String
   category Category @relation(fields: [categoryId], references: [id])
   discountPercentage Int @default(0)
 }

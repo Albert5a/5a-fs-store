@@ -30,10 +30,10 @@ const ProductItem = ({ product }: IProduct) => {
         )}
       </div>
       <div className="flex flex-col gap-1">
-        <p className=" overflow-hidden text-ellipsis whitespace-nowrap text-sm">
+        <p className="overflow-hidden text-ellipsis whitespace-nowrap text-sm">
           {product.name}
         </p>
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 overflow-hidden whitespace-nowrap">
           {product.discountPercentage > 0 ? (
             <>
               <p className="font-semibold">
